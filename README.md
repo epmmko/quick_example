@@ -17,6 +17,8 @@ and youtube https://www.youtube.com/watch?v=r-DMGvSHFuU
 - Step 4: create the main cpp file to call a function from the library (dll). Include the header file at the top
 <br> right click on the <b>Header Files</b> in the <b>Solution Explorer</b> and select .h file created previously to allow Visual Studio to locate the header file.
 - Step 5: copy .lib and .dll file from `.\UserMathDll` to `Test_Numer_dll`
+<br>Option 2, if these files are not directly copied, the path to these file can be specified in Visual Studio by right-click on the `call to dll` project -> Configuration Properties -> VC++ Directories -> Library Directories -> add new directory, add the release version of the compiled dll-solution, e.g. '.\UserMathDll\Release'
+
 - Step 6: allow Visual Studio to locate the `dll` file by right-click at the `call to dll` project, select `properties` -> `Linker` -> `Input` -> edit `Additional Dependencies` -> then type `UserMathDll.lib` (or whatever .lib that was created in the release folder when build solution for the dll project). The specific steps are shown in MSDN (the link above), too. Then run the program
 
 It is quite clumsy to close the `dll` project and create a new project to test `dll` file. One way to do this quick is to add `New Project...` into the solution explorer so that both `dll` and `call to dll` can be seen at once.
