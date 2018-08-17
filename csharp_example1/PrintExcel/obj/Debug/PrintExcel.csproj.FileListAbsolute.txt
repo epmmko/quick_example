@@ -1,0 +1,10 @@
+C:\Users\epanacha\Desktop\GUI\cs_print_excel\PrintExcel\bin\Debug\PrintExcel.exe.config
+C:\Users\epanacha\Desktop\GUI\cs_print_excel\PrintExcel\bin\Debug\PrintExcel.exe
+C:\Users\epanacha\Desktop\GUI\cs_print_excel\PrintExcel\bin\Debug\PrintExcel.pdb
+C:\Users\epanacha\Desktop\GUI\cs_print_excel\PrintExcel\obj\Debug\PrintExcel.csprojAssemblyReference.cache
+C:\Users\epanacha\Desktop\GUI\cs_print_excel\PrintExcel\obj\Debug\PrintExcel.Properties.Resources.resources
+C:\Users\epanacha\Desktop\GUI\cs_print_excel\PrintExcel\obj\Debug\PrintExcel.csproj.GenerateResource.cache
+C:\Users\epanacha\Desktop\GUI\cs_print_excel\PrintExcel\obj\Debug\PrintExcel.csproj.CoreCompileInputs.cache
+C:\Users\epanacha\Desktop\GUI\cs_print_excel\PrintExcel\obj\Debug\PrintExcel.exe
+C:\Users\epanacha\Desktop\GUI\cs_print_excel\PrintExcel\obj\Debug\PrintExcel.pdb
+C:\Users\epanacha\Desktop\GUI\cs_print_excel\PrintExcel\obj\Debug\PrintExcel.Form1.resources
