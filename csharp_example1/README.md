@@ -4,3 +4,5 @@ Add Microsoft.Office.Interop.Excel by follow https://www.codeguru.com/csharp/csh
 
 This example use few sources from internet (links is given as comments in code).
 It combines internet examples to show how to output data from C# to Excel and create Excel graph.
+
+Source code to create Excel data file and graph is shown in PrintExcel/Form1.cs
