@@ -1,0 +1,110 @@
+Sub MakeChart()
+
+Dim chart1 As chart
+
+
+
+Dim x_range As Range
+
+Dim y_range As Range
+
+
+
+Dim x2_range As Range
+
+Dim y2_range As Range
+
+
+
+Set x_range = Range(Cells(30, 10), Cells(37, 10))
+
+Set y_range = Range(Cells(30, 12), Cells(37, 12))
+
+
+
+Set x2_range = Range(Cells(38, 10), Cells(45, 10))
+
+Set y2_range = Range(Cells(38, 12), Cells(45, 12))
+
+
+
+
+
+Set chart1 = CreateChart(Union(x_range, y_range), 0, 0, 360, 216, "title-z", "value_1")
+
+Set chart2 = Add_Series(x2_range, y2_range, chart1)
+
+
+
+End Sub
+
+
+
+Function CreateChart(rng, l, t, w, h, name, series_name) As chart
+
+    Dim chart1 As chart
+
+    Set chart1 = ActiveSheet.Shapes.AddChart2(332, xlXYScatter, l, t, w, h).chart
+
+    With chart1
+
+        .SetSourceData Source:=rng, PlotBy:=xlColumns
+
+        .SeriesCollection(1).name = series_name
+
+        .HasTitle = True
+
+        .ChartTitle.Text = name
+
+        .HasLegend = True
+
+        With .Axes(xlValue)
+
+            .HasTitle = True
+
+            With .AxisTitle
+
+                .Caption = "y"
+
+            End With
+
+        End With
+
+        With .Axes(xlCategory)
+
+            .HasTitle = True
+
+            .AxisTitle.Caption = "x"
+
+        End With
+
+    End With
+
+    Set CreateChart = chart1
+
+End Function
+
+
+
+Function Add_Series(x_range As Range, y_range As Range, chart1 As chart) As chart
+
+    With chart1
+
+        .ChartTitle.Text = "changed"
+
+        With .SeriesCollection.NewSeries
+
+        .name = "s-2"
+
+        .XValues = x_range
+
+        .Values = y_range
+
+        End With
+
+    End With
+
+    Set Add_Series = chart1
+
+End Function
+
